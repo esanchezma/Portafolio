@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+     font-size: 16px; 
+    scroll-behavior: smooth;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+/*** Style hero body***/
+body{
+    font-family: 'Rubik', sans-serif, cursive;
+    background-color: #020403;
+    color: #a9a9a9;
+    
+}
+/*** Style hero hero__navbar***/
+.hero__navbar{
+    width: 100%;
+    height: 80px;    /*agrego 80% al navbar modo escritorio*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* para que se vaya al lao derecho*/
+}
+.hero__navbar nav{
+    padding: 0 20px;  /* separacion de los lados */
+    display: flex;
+    gap: 1.5rem;
+}
+.hero__navbar nav a{
+    font-size: 1rem;  /* tamaño que va tener */
+    color:#a9a9a9;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.hero__navbar nav a:hover{
+    color:#fff;
+}
+/*** Style hero__container- img perfil- social***/
+.hero__container{
+     padding: 4.5rem 0; 
+    min-height: calc(100vh - 80px); /*coloco 100% de lo visual y resto los 80 que agrego a navbar; lo hacemos con el minimo*/
+    display:flex;
+    flex-direction: column;  /*para que la imagen me quede arriba*/
+    align-items: center;
+    justify-content: center;
+     background-image: url(/assets/img/Group\ 99.svg); 
+     background-repeat:repeat-y;
+     background-position: top center;
+     background-position-x: center;
+}
+
+.hero__img-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.hero__img-container img {
+    width: 250px;
+    height:250px;
+    border-radius:50%;
+    
+}
+
+.hero__subtitle {
+    color: #fff;
+    font-size: clamp(16px, 5vw, 50px);
+}
+.hero__info{
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 450px;
+     
+   
+}
+.hero__title,
+.hero__subtitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+.hero__social{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    
+}
+
+.hero__social i {
+   font-size: 38px;
+   color:#a9a9a9;
+   transition: all .3s ease-in-out;
+}
+.hero__social i:hover {
+    
+    color:#fff;
+    
+ }
+ .wrapper {
+     max-width: 1024px; /* El maximo tamaño para dispositivos DESTOCK */ 
+     margin: 0 auto;
+    }
+
+/*** Style about***/
+
+ .about {
+     padding: 5rem 0 20px;
+     text-align: center;
+       
+ }   
+ .about__title {
+     color: #fff;
+     font-size: 2rem;
+     margin-bottom: 1rem;
+ }
+
+/*** Style skills***/
+ 
+ .skills {
+    padding: 5rem 0 20px;
+        
+}   
+ .skills__title {
+     color: #fff;
+     font-size: 2rem; 
+     text-align: center;
+ }
+ .skills__container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 200px 200px;
+     
+   
+ }
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+
+}
+.skills_item i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1c1616;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   /*  Alineo los items al centro*/
+   
+    
+}
+.skills_item span {
+    color: #fff;
+}
+
+/*** Style experience***/
+
+.experience {
+    padding: 5rem 0 20px;
+    margin-bottom: 5rem;
+        
+}   
+.experience__title {
+    color: #fff;
+    font-size: 2rem; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.experience_item {
+    padding: 1rem;
+    display: flex;
+    flex-direction:row;     
+    border-bottom: 0.05rem solid #a9a9a9;
+    justify-content: space-evenly; 
+}
+
+/*** Style briefcase***/
+
+.briefcase {
+    padding: 5rem 0 20px;
+        
+}   
+ .briefcase__title {
+     color: #fff;
+     font-size: 2rem; 
+     text-align: center;
+ }
+ .briefcase__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 70px;    
+   
+ }
+
+.briefcase_item {    
+    width:  150px;
+    height: 150px;
+    margin: 15px; 
+}
+
+.briefcase__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.briefcase__img img{
+    width:  150px;
+    height: 150px;
+    margin-top: 5px;
+ 
+} 
+
+/**** Style contact****/
+
+.briefcase {
+    padding: 5rem 0 20px;
+        
+}   
+ .contact__title {
+     color: #fff;
+     font-size: 2rem; 
+     text-align: center;
+     padding: 2rem;
+ }
+ .contact__container {
+     display: grid;
+     grid-template-columns: repeat(2, 0.3fr);
+     justify-content: center;
+     border-bottom: 10rem;
+     
+   
+ }
+.contact_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    
+
+}
+.contact_item i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    border-style: solid;
+    background-color: #020403;
+    color:#a9a9a9;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   /*  Alineo los items al centro*/    
+    transition: all .3s ease-in-out;
+}
+.contact_item i:hover {
+    color:#fff;
+}
+.contact_item span {
+    color: #fff;
+}
+.contact_item a {
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+     width: 20px;
+}
+
+
+ @media screen and (max-width: 576px){
+    
+    .hero__navbar{
+    
+        display: none;
+    
+   } 
+   .hamburger{    
+
+    display: block;
+   }
+
+  
+}
+ 
